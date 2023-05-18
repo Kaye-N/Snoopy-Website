@@ -15,21 +15,22 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
+
       <main className={styles.main}>
         <div className={styles.description}>
+          
           <div>
+            
             <a
               href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
               target="_blank"
               rel="noopener noreferrer"
             >
-              By{' '}
               <Image
-                src="/vercel.svg"
-                alt="Vercel Logo"
-                className={styles.vercelLogo}
-                width={100}
-                height={24}
+                src="/snoopycoffee.ico"
+                alt="Snoopy_Coffee"
+                width={170}
+                height={120}
                 priority
               />
             </a>
@@ -49,45 +50,24 @@ export default function Home() {
 
         <div className={styles.grid}>
           <a
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
+            href="new_page"
             className={styles.card}
             target="_blank"
             rel="noopener noreferrer"
           >
             <h2 className={inter.className}>
-              Docs <span>-&gt;</span>
+              2000&#39;s Snoopy
             </h2>
             <p className={inter.className}>
-              Find in-depth information about Next.js features and&nbsp;API.
+              Find more 2000&#39;s snoopy&nbsp;here.
             </p>
-          </a>
-
-          <a
-            href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <h2 className={inter.className}>
-              Learn <span>-&gt;</span>
-            </h2>
-            <p className={inter.className}>
-              Learn about Next.js in an interactive course with&nbsp;quizzes!
-            </p>
-          </a>
-
-          <a
-            href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <h2 className={inter.className}>
-              Templates <span>-&gt;</span>
-            </h2>
-            <p className={inter.className}>
-              Discover and deploy boilerplate example Next.js&nbsp;projects.
-            </p>
+            <Image
+            src="/snoopyshow.png"
+            alt="snoopy sitting"
+            height={160}
+            width={150}
+            priority
+          />
           </a>
 
           <a
