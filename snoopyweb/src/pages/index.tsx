@@ -9,34 +9,35 @@ export default function Home() {
   return (
     <>
       <Head>
+        {/*Meta Data*/}
         <title>A Snoopy Corner</title>
         <meta name="description" content="Website about Snoopy" />
         <meta name= "keywords" content= "Snoopy, Peanuts"></meta>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-
       <main className={styles.main}>
         <div className={styles.description}>
-          
           <div>
-            
             <a
+              /*Open empty page*/
               href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
               target="_blank"
               rel="noopener noreferrer"
             >
+            Snoopy
               <Image
                 src="/snoopycoffee.ico"
                 alt="Snoopy_Coffee"
-                width={170}
-                height={120}
+                width={100}
+                height={100}
                 priority
               />
             </a>
+            Snoopy&#39;s favorite food are root beer and pizza
           </div>
-        </div>
 
+        </div>
         <div className={styles.center}>
           <Image
             className={styles.logo}
@@ -68,21 +69,6 @@ export default function Home() {
             width={150}
             priority
           />
-          </a>
-
-          <a
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <h2 className={inter.className}>
-              Deploy <span>-&gt;</span>
-            </h2>
-            <p className={inter.className}>
-              Instantly deploy your Next.js site to a shareable URL
-              with&nbsp;Vercel.
-            </p>
           </a>
         </div>
       </main>
