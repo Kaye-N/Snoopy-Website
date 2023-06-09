@@ -25,7 +25,9 @@ export default function Home() {
               target="_blank"
               rel="noopener noreferrer"
             >
-            Snoopy
+              <p>
+                Snoopy&nbsp;
+              </p>
               <Image
                 src="/snoopycoffee.ico"
                 alt="Snoopy_Coffee"
@@ -34,9 +36,20 @@ export default function Home() {
                 priority
               />
             </a>
-            Snoopy&#39;s favorite food are root beer and pizza
           </div>
-
+          <div className={styles.grid}>
+            <p>
+              In 1950 Snoopy was created by Charles M. Schulz
+            </p>
+            <a>
+              <Image
+                src={"/snoopydance.jpg"}
+                alt={"snoopy dancing"}
+                height={130}
+                width={140}
+              />
+            </a>
+          </div>
         </div>
         <div className={styles.center}>
           <Image

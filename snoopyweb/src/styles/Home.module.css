@@ -22,10 +22,14 @@
 
 /*snoopy coffee header line placement*/
 .description a {
-  display: flex;
   justify-content: center;
   align-items: center;
   gap: 0.5rem;
+}
+
+.description h2{
+  justify-content: safe;
+
 }
 
 /*2000's Snoopy Left CardPositioning*/
@@ -50,7 +54,6 @@
   display: inline-block;
   transition: transform 200ms;
 }
-
 
 /*2000's Snoopy sub font*/
 .card p {
