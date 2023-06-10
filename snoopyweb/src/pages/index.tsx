@@ -15,6 +15,8 @@ export default function Home() {
         <meta name= "keywords" content= "Snoopy, Peanuts"></meta>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
+        <link href='https://unpkg.com/css.gg@2.0.0/icons/css/play-button-o.css' rel='stylesheet'/>
+        <link href='https://unpkg.com/css.gg@2.0.0/icons/css/log-off.css' rel='stylesheet'/>
       </Head>
       <main className={styles.main}>
         <div className={styles.description}>
@@ -38,9 +40,6 @@ export default function Home() {
             </a>
           </div>
           <div className={styles.grid}>
-            <p>
-              In 1950 Snoopy was created by Charles M. Schulz
-            </p>
             <a>
               <Image
                 src={"/snoopydance.jpg"}
@@ -61,28 +60,20 @@ export default function Home() {
             priority
           />
         </div>
+        <div className= "timer">
+          <span className="timer__part timer__part--minutes">00</span>
+          <span className="timer__part">:</span>
+          <span className="timer__part timer__part--seconds">00</span>
 
-        <div className={styles.grid}>
-          <a
-            href="new_page"
-            className={styles.card}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <h2 className={inter.className}>
-              2000&#39;s Snoopy
-            </h2>
-            <p className={inter.className}>
-              Find more 2000&#39;s snoopy&nbsp;here.
-            </p>
-            <Image
-            src="/snoopyshow.png"
-            alt="snoopy sitting"
-            height={160}
-            width={150}
-            priority
-          />
-          </a>
+          {/*button to start*/}
+          <button type="button" className="timer__btn--control timer__btn--start">
+            <i className="gg-play-button-o"></i>
+          </button>
+
+          {/*reset button*/}
+          <button type="button" className="timer__btn--control--reset">
+            <i className="gg-log-off"></i>
+          </button>
         </div>
       </main>
     </>
