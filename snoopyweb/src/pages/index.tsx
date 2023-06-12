@@ -15,6 +15,7 @@ export default function Home() {
         <meta name= "keywords" content= "Snoopy, Peanuts"></meta>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
+        <link rel="style_buttons" href="css/clock.css" />
         <link href='https://unpkg.com/css.gg@2.0.0/icons/css/play-button-o.css' rel='stylesheet'/>
         <link href='https://unpkg.com/css.gg@2.0.0/icons/css/log-off.css' rel='stylesheet'/>
       </Head>
@@ -28,7 +29,7 @@ export default function Home() {
               rel="noopener noreferrer"
             >
               <p>
-                Snoopy&nbsp;
+                Snoopy Pomodoro Timer&nbsp;
               </p>
               <Image
                 src="/snoopycoffee.ico"
@@ -39,27 +40,8 @@ export default function Home() {
               />
             </a>
           </div>
-          <div className={styles.grid}>
-            <a>
-              <Image
-                src={"/snoopydance.jpg"}
-                alt={"snoopy dancing"}
-                height={130}
-                width={140}
-              />
-            </a>
-          </div>
-        </div>
-        <div className={styles.center}>
-          <Image
-            className={styles.logo}
-            src="/next.svg"
-            alt="Next.js Logo"
-            width={180}
-            height={37}
-            priority
-          />
-        </div>
+
+          {/*--Timer--*/}
         <div className= "timer">
           <span className="timer__part timer__part--minutes">00</span>
           <span className="timer__part">:</span>
@@ -74,6 +56,19 @@ export default function Home() {
           <button type="button" className="timer__btn--control--reset">
             <i className="gg-log-off"></i>
           </button>
+        </div>
+
+        {/*Snoopy dancing image*/}
+          <div className={styles.grid}>
+            <a>
+              <Image
+                src={"/snoopydance.jpg"}
+                alt={"snoopy dancing"}
+                height={130}
+                width={140}
+              />
+            </a>
+          </div>
         </div>
       </main>
     </>
