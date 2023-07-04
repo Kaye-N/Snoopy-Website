@@ -1,34 +1,52 @@
 @import url('https://unpkg.com/css.gg@2.0.0/icons/css/play-button-o.css');
 @import url('https://unpkg.com/css.gg@2.0.0/icons/css/log-off.css');
 
-.timer {
-    font-family: sans-serif;
-    display: inline-block;
-    padding: 24px 32px;
-    border-radius: 30px;
-    background: white;
+.gg-play-button-o {
+    box-sizing: border-box;
+    position: relative;
+    display: block;
+    transform: scale(var(--ggs,1));
+    width: 22px;
+    height: 22px;
+    border: 2px solid;
+    border-radius: 20px
 }
 
-.timer__part {
-    font-size: 36px;
-    font-weight: bold;
-
+.gg-play-button-o::before {
+    content: "";
+    display: block;
+    box-sizing: border-box;
+    position: absolute;
+    width: 0;
+    height: 10px;
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    border-left: 6px solid;
+    top: 4px;
+    left: 7px
 }
 
-.timer__btn{
-    width: 50px;
-    height: 50px;
-    margin-left: 16px;
-    border-radius: 50%;
-    border: black;
-    color:antiquewhite;
-
+.gg-log-off {
+    box-sizing: border-box;
+    position: relative;
+    display: block;
+    border-radius: 16px;
+    border: 2px solid;
+    transform: scale(var(--ggs,1));
+    width: 16px;
+    height: 16px;
+    border-top: 2px solid transparent
 }
 
-.timer__btn--start{
-    background: #00b840;
-}
-
-.timer__btn--stop{
-    background: #ff0256;
+.gg-log-off::before {
+    content: "";
+    display: block;
+    box-sizing: border-box;
+    position: absolute;
+    border-radius: 3px;
+    height: 8px;
+    width: 2px;
+    background: currentColor;
+    left: 5px;
+    bottom: 6px
 }
