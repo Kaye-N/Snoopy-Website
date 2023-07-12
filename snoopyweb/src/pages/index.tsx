@@ -1,8 +1,10 @@
+//Home Page
 import Head from 'next/head'
 import Image from 'next/image'
 import { Inter } from 'next/font/google'
 import styles from '@component/styles/Home.module.css'
 
+//Google fonts class
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
@@ -66,7 +68,6 @@ export default function Home() {
                 width={140}
               />
             </a>
-            
           </div>
         </div>
       </main>
