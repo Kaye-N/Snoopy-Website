@@ -5,6 +5,8 @@ import type { AppProps } from 'next/app';
 import Head from 'next/head';
 import { Container } from 'react-bootstrap';
 import styles from "@/styles/App.module.css";
+import "@/styles/clock.module.css";
+
 
 const inter = Inter({subsets: ['latin']});
 
