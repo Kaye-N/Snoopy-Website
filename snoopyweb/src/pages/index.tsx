@@ -55,7 +55,7 @@ export default function Home() {
             <i className="gg-log-off"></i>
           </button>
         </div>
-
+        
         {/*Snoopy dancing image*/}
           <div className={styles.grid}>
             <a>
@@ -66,6 +66,7 @@ export default function Home() {
                 width={140}
               />
             </a>
+            
           </div>
         </div>
       </main>
