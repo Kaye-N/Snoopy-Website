@@ -4,6 +4,7 @@ import Image from 'next/image'
 import { Inter } from 'next/font/google'
 import styles from '@component/styles/Home.module.css'
 import clock from '@component/styles/clock.module.css';
+import { Container } from 'react-bootstrap';
 
 //Google fonts class
 const inter = Inter({ subsets: ['latin'] })
@@ -41,23 +42,25 @@ export default function Home() {
               />
             </a>
           </div>
+        
+        <Container className={clock.position}>
+            {/*--Timer--*/}
+          <div className= {clock.gg}>
+            <span className="timer__part timer__part--minutes">00</span>
+            <span className="timer__part">:</span>
+            <span className="timer__part timer__part--seconds">00</span>
 
-          {/*--Timer--*/}
-        <div className= {clock.gg}>
-          <span className="timer__part timer__part--minutes">00</span>
-          <span className="timer__part">:</span>
-          <span className="timer__part timer__part--seconds">00</span>
+            {/*button to start*/}
+            <button type="button" className="timer__btn--control timer__btn--start">
+              <i className="gg-play-button-o"></i>
+            </button>
 
-          {/*button to start*/}
-          <button type="button" className="timer__btn--control timer__btn--start">
-            <i className="gg-play-button-o"></i>
-          </button>
-
-          {/*reset button*/}
-          <button type="button" className="timer__btn--control--reset">
-            <i className="gg-log-off"></i>
-          </button>
-        </div>
+            {/*reset button*/}
+            <button type="button" className="timer__btn--control--reset">
+              <i className="gg-log-off"></i>
+            </button>
+          </div>
+        </Container>
         
         {/*Snoopy dancing image*/}
           <div className={styles.grid}>
