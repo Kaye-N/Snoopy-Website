@@ -3,6 +3,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 import { Inter } from 'next/font/google'
 import styles from '@component/styles/Home.module.css'
+import clock from '@component/styles/clock.module.css';
 
 //Google fonts class
 const inter = Inter({ subsets: ['latin'] })
@@ -42,7 +43,7 @@ export default function Home() {
           </div>
 
           {/*--Timer--*/}
-        <div className= "timer">
+        <div className= {clock.gg}>
           <span className="timer__part timer__part--minutes">00</span>
           <span className="timer__part">:</span>
           <span className="timer__part timer__part--seconds">00</span>
