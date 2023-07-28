@@ -1,9 +1,10 @@
-.position{
+.position {
     border: 5px solid;
-  position: absolute;
-  top: 50%;
-  transform: translate(0, -50%);
-  padding: 10px;
+    position: absolute;
+    top: 50%;
+    transform: translate(145%, -50%);
+    padding: 15px;
+    max-width: 300px;
 }
 
 .gg-play-button-o {
@@ -11,8 +12,8 @@
     position: relative;
     display: block;
     transform: scale(var(--ggs,1));
-    width: 22px;
-    height: 22px;
+    width: 222px;
+    height: 222px;
     border: 2px solid;
     border-radius: 20px
 }
@@ -38,8 +39,8 @@
     border-radius: 16px;
     border: 2px solid;
     transform: scale(var(--ggs,1));
-    width: 16px;
-    height: 16px;
+    width: 216px;
+    height: 216px;
     border-top: 2px solid transparent
 }
 

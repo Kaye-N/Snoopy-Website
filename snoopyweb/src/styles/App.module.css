@@ -1,3 +1,13 @@
 .pageContainer{
-    margin: 2rem auto;
+    color-scheme: light;
+    width: 100%;
+    height:auto;
+
+}
+
+.snoopyGrid {
+    display: grid;
+    grid-template-columns: 200px 200px 200px 200px;
+    grid-gap: 50px;
+
 }

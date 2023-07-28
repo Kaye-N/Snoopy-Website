@@ -1,12 +1,13 @@
 //Home Page
-import Head from 'next/head'
-import Image from 'next/image'
-import { Inter } from 'next/font/google'
-import styles from '@component/styles/Home.module.css'
+import Head from 'next/head';
+import Image from 'next/image';
+import { Inter } from 'next/font/google';
+import styles from '@component/styles/Home.module.css';
 import clock from '@component/styles/clock.module.css';
+import grid from '@component/styles/App.module.css'
 import { Container } from 'react-bootstrap';
 
-//Google fonts class
+//Google fonts class 
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
@@ -26,7 +27,7 @@ export default function Home() {
           <div>
             <a
               /*Open empty page*/
-              href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
+              href="https://www.peanuts.com/about/snoopy"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -45,34 +46,30 @@ export default function Home() {
         
         <Container className={clock.position}>
             {/*--Timer--*/}
-          <div className= {clock.gg}>
-            <span className="timer__part timer__part--minutes">00</span>
+          <div className= "timer">
+            <span className="timer__part timer__part-minutes">00</span>
             <span className="timer__part">:</span>
-            <span className="timer__part timer__part--seconds">00</span>
+            <span className="timer__part timer__part-seconds">00</span>
 
             {/*button to start*/}
-            <button type="button" className="timer__btn--control timer__btn--start">
+            <button type="button" className={clock.gg}>
               <i className="gg-play-button-o"></i>
             </button>
 
             {/*reset button*/}
-            <button type="button" className="timer__btn--control--reset">
+            <button type="button" className="timer__btn-control-reset">
               <i className="gg-log-off"></i>
             </button>
           </div>
         </Container>
         
-        {/*Snoopy dancing image*/}
-          <div className={styles.grid}>
-            <a>
-              <Image
-                src={"/snoopydance.jpg"}
-                alt={"snoopy dancing"}
-                height={130}
-                width={140}
-              />
-            </a>
-          </div>
+        {/*Snoopy Timer options*/}
+          <Container className={grid.snoopyGrid}>
+              <div className='picture'>1</div>
+              <div className='picture'>2</div>
+              <div className='picture'>3</div>
+              <div className='picture'>4</div>
+          </Container>
         </div>
       </main>
     </>
