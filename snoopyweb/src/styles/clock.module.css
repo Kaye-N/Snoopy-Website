@@ -7,18 +7,18 @@
     max-width: 300px;
 }
 
-.gg-play-button-o {
+.ggplay {
     box-sizing: border-box;
     position: relative;
     display: block;
     transform: scale(var(--ggs,1));
-    width: 222px;
-    height: 222px;
+    width: 122px;
+    height: 122px;
     border: 2px solid;
     border-radius: 20px
 }
 
-.gg-play-button-o::before {
+.ggplay::before {
     content: "";
     display: block;
     box-sizing: border-box;
@@ -32,19 +32,19 @@
     left: 7px
 }
 
-.gg-log-off {
+.ggoff {
     box-sizing: border-box;
     position: relative;
     display: block;
     border-radius: 16px;
     border: 2px solid;
     transform: scale(var(--ggs,1));
-    width: 216px;
-    height: 216px;
+    width: 116px;
+    height: 116px;
     border-top: 2px solid transparent
 }
 
-.gg-log-off::before {
+.ggoff::before {
     content: "";
     display: block;
     box-sizing: border-box;

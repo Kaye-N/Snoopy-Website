@@ -52,12 +52,12 @@ export default function Home() {
             <span className="timer__part timer__part-seconds">00</span>
 
             {/*button to start*/}
-            <button type="button" className={clock.gg}>
+            <button type="button" className={clock.ggplay}>
               <i className="gg-play-button-o"></i>
             </button>
 
             {/*reset button*/}
-            <button type="button" className="timer__btn-control-reset">
+            <button type="button" className={clock.ggoff}>
               <i className="gg-log-off"></i>
             </button>
           </div>
