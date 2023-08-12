@@ -53,7 +53,11 @@ export default function Home() {
 
             {/*button to start*/}
             <button type="button" className={clock.ggplay}>
-              <i className="gg-play-button-o"></i>
+              <i className="playbutton">
+                <svg>
+                  <use href="#playbutton" xlinkHref= "#playbutton"/>
+                </svg>
+              </i>
             </button>
 
             {/*reset button*/}

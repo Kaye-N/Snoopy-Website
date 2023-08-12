@@ -5,54 +5,5 @@
     transform: translate(145%, -50%);
     padding: 15px;
     max-width: 300px;
-}
-
-.ggplay {
-    box-sizing: border-box;
-    position: relative;
-    display: block;
-    transform: scale(var(--ggs,1));
-    width: 122px;
-    height: 122px;
-    border: 2px solid;
-    border-radius: 20px
-}
-
-.ggplay::before {
-    content: "";
-    display: block;
-    box-sizing: border-box;
-    position: absolute;
-    width: 0;
-    height: 10px;
-    border-top: 5px solid transparent;
-    border-bottom: 5px solid transparent;
-    border-left: 6px solid;
-    top: 4px;
-    left: 7px
-}
-
-.ggoff {
-    box-sizing: border-box;
-    position: relative;
-    display: block;
-    border-radius: 16px;
-    border: 2px solid;
-    transform: scale(var(--ggs,1));
-    width: 116px;
-    height: 116px;
-    border-top: 2px solid transparent
-}
-
-.ggoff::before {
-    content: "";
-    display: block;
-    box-sizing: border-box;
-    position: absolute;
-    border-radius: 3px;
-    height: 8px;
-    width: 2px;
-    background: currentColor;
-    left: 5px;
-    bottom: 6px
+    display:inline-block;
 }
