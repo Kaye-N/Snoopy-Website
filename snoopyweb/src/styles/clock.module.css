@@ -1,9 +1,0 @@
-.position {
-    border: 5px solid;
-    position: absolute;
-    top: 50%;
-    transform: translate(145%, -50%);
-    padding: 15px;
-    max-width: 300px;
-    display:inline-block;
-}
